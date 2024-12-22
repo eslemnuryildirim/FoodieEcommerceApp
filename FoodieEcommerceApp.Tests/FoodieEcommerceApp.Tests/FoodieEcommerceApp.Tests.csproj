@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="Microsoft.NETCore.Targets" Version="5.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="System.Diagnostics.Tools" Version="4.3.0" />
+    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\FoodieEcommerceApp.Application\FoodieEcommerceApp.Application\FoodieEcommerceApp.Application.csproj" />
+    <ProjectReference Include="..\..\FoodieEcommerceApp.Domain\FoodieEcommerceApp.Domain\FoodieEcommerceApp.Domain.csproj" />
+    <ProjectReference Include="..\..\FoodieEcommerceApp.Infrastructure\FoodieEcommerceApp.Infrastructure\FoodieEcommerceApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\FoodieEcommerceApp.Presentation\FoodieEcommerceApp.Presentation\FoodieEcommerceApp.Presentation.csproj" />
+    <ProjectReference Include="..\..\FoodieEcommerceApp.WebAPI\FoodieEcommerceApp.WebAPI\FoodieEcommerceApp.WebAPI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>
